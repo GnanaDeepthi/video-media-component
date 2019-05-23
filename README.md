@@ -1,28 +1,61 @@
-# video-media-component
-# VideoMedia
+# VideoMedia Component using  AngularMaterial
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
 
-## Development server
+<p align="center">
+  <img src="https://github.com/ERS-HCL/EDGE-Components-Hackathon-2019/blob/ERSEDGE022019011/Images/video.png" width="750" title="hover text"><br><br>
+  <img src="https://github.com/ERS-HCL/EDGE-Components-Hackathon-2019/blob/ERSEDGE022019011/Images/scroll.png" width="750" alt="scroll image"><br><br>
+    <img src="https://github.com/ERS-HCL/EDGE-Components-Hackathon-2019/blob/ERSEDGE022019011/Images/modal.png" width="750" alt="modal">
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To preview demo of VideomediaComponent, [Click Here](https://angular-2h4j53.stackblitz.io).
 
-## Build
+### Prerequisites
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Download the  VideoMedia component and install the required packages and run the application.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Installing
 
-## Running end-to-end tests
+```sh
+$ npm install
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Run Server
 
-## Further help
+```sh
+$ ng serve
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Adding  VideoMedia component to your project
+
+```sh
+<app-video-media title="Title" src="../assets/sheeran.mp4" scroll="250"></app-video-media>
+```
+
+### Input for VideoMedia component
+
+```sh
+  @Input()  title: string;
+  @Input()  src: string;
+  @Input()  scroll: number;
+```
+
+
+| Input | Purpose |
+| ------ | ------ |
+| title |   Title for the component |
+| src | Path of video  |
+| scroll | To fix the video when exceeded the scroll value  |
+
+
+#### How it works?
+
+- Hover on play icon, it shows  play inline and modal view options.
+
+- Play option will play the video Inline.
+
+- Modal option will display Modal view to play the video.
+
+- If you scroll down the page then the video is fixed at top-right position.
