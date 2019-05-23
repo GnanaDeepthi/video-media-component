@@ -42,7 +42,7 @@ $ ng serve
 
 ```sh
   @Input()  videoMp4: string;
-    @Input()  videoOgg: string;
+   @Input()  videoOgg: string;
   @Input()  modal: boolean;
   @Input()  sticky: boolean;
   @Input()  stickyPosition: string;
@@ -62,6 +62,8 @@ $ ng serve
 
 - By clicking 'Open Modal' we can see the video playing in modal view.
 
-- When playing the video if we scroll the window then we can see the video sticked in the stickyposition of the input we given. 
+- When playing the video if we scroll the window then we can see the video sticked in the stickyposition of the input we given.
+
+- we can provide mp4 file or ogg file or youtube url .It will play according to the priority we given.
 
 
